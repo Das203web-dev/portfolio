@@ -1,0 +1,413 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #14202E !important;
+    color: white !important;
+    font-weight: 300;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header {
+    width: 100%;
+}
+
+.cover-bg {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: first baseline;
+}
+
+.hero-image {
+    padding-top: 30px;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: fit-content;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* 
+.menu-div {
+    background-color: transparent;
+}
+
+.nav-bar {
+    background: transparent;
+} */
+
+.nav-bar ul {
+    display: flex;
+    padding-left: 0px;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-bar ul li a:hover {
+    color: gold !important;
+}
+
+.text {
+    width: 100%;
+    overflow: hidden;
+}
+
+.text p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.735);
+}
+
+.text h1 {
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    margin-top: 300px;
+    font-weight: 100;
+
+}
+
+#name {
+    font-weight: 800;
+    color: #fff;
+}
+
+.featured-portfolio-section {
+    /* background-color: gray; */
+    padding: 5em 0 0 0;
+    margin-bottom: 280px;
+
+}
+
+.featured-portfolio-section-title {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.text-portfolio {
+    font-weight: bold;
+}
+
+.featured-portfolio-menu li {
+    text-transform: capitalize;
+}
+
+.featured-portfolio-menu li:hover {
+    color: gold;
+}
+
+.photo {
+    min-height: 350px;
+    width: 360px;
+}
+
+/* .my-resume-section {
+    background-color: rgb(217, 205, 205);
+    padding: 0px 150px 0 150px;
+    color: white;
+} */
+
+.my-resume-section h3 {
+    font-weight: 100;
+}
+
+.my-resume-section h3 strong {
+    font-weight: bold;
+}
+
+.resume-item {
+    background-color: #2D4356;
+    color: #fff;
+    border: 4px solid transparent;
+    border-radius: 7px;
+    transition: 0.3 all ease;
+}
+
+.resume-item-title {
+    color: #bac964;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.about-me-img {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+
+.button-one {
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .2rem;
+    color: white;
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+
+.button-two {
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .2rem;
+    /* color: white; */
+    padding: 10px 15px;
+    color: #fffdfd;
+    background-color: #493548;
+}
+
+@media screen and (min-width: 1281px) {
+    .cover {
+        width: 100%;
+    }
+
+    .img-1-div {
+        position: absolute;
+    }
+
+    .img-2-div {
+        position: relative;
+        top: 150px;
+        left: -24px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1280) {
+    .cover {
+        width: 100%;
+    }
+
+    .img-1-div {
+        position: absolute;
+    }
+
+    .img-2-div {
+        position: relative;
+        top: 150px;
+        left: 0px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width:1199px) {
+    .cover {
+        padding: 0 30px;
+    }
+
+    .header {
+        height: 100%;
+    }
+
+    .hero-image {
+        height: 100%;
+    }
+
+    .text h1 {
+        margin-top: 200px;
+    }
+
+    .img-1-div {
+        position: static;
+    }
+
+    .photo {
+        width: 100%;
+        /* gap: 0; */
+    }
+
+    .image-section {
+        gap: 0;
+    }
+
+    .img-2-div {
+        position: static;
+        /* top: 150px;
+        left: -18px; */
+    }
+}
+
+@media screen and (min-width: 60px) and (max-width:600px) {
+    /* body {
+        padding: 3px;
+    } */
+
+    header {
+        padding: 0;
+    }
+
+    .text h1 {
+        margin-top: 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-bar ul {
+        padding: 0;
+    }
+
+    .hamburger-menu .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+        text-align: center;
+    }
+
+    .nav-bar.active {
+        height: 350px;
+        margin-top: 30px;
+    }
+
+    .cover-bg {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: first baseline;
+        /* background: transparent !important; */
+    }
+
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11101b;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 40px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: o;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+        /* color: red; */
+    }
+
+    .text h1 {
+        font-size: 50px;
+        color: white;
+        text-align: center;
+        /* position: sticky; */
+        margin-top: 400px;
+        font-weight: lighter;
+
+    }
+
+    .img-1-div {
+        position: static;
+        /* padding: 2px; */
+    }
+
+    .photo {
+        height: 350px;
+        width: 100%;
+    }
+
+    .img-2-div {
+        position: static;
+        /* padding: 2px; */
+        top: 0;
+        left: 0;
+    }
+}
+
+/* @media only screen and(max-width: 600px) {
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger-menu .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+    }
+
+    .nav-bar.active {
+        height: 450px;
+    }
+
+    .nav-bar {
+        height: 450px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11101b;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+        color: red;
+    }
+} */
