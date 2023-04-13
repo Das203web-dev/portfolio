@@ -22,7 +22,7 @@ header {
 .cover-bg {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: first baseline;
 }
 
@@ -150,7 +150,7 @@ header {
 
 .resume-item {
     background-color: #2D4356;
-    color: #fff;
+    color: thistle;
     /* border: 4px solid transparent; */
     border-radius: 7px;
     transition: 0.3 all ease;
@@ -174,6 +174,10 @@ header {
     font-weight: 100;
 }
 
+.about-me-div p {
+    color: thistle;
+}
+
 .button-one {
     border-radius: 100px;
     text-transform: uppercase;
@@ -181,7 +185,7 @@ header {
     letter-spacing: .2rem;
     color: white;
     padding: 10px 15px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
 .button-two {
@@ -193,6 +197,111 @@ header {
     padding: 10px 15px;
     color: #fffdfd;
     background-color: #493548;
+}
+
+.client-testimonial {
+    background-color: #49354879;
+    padding: 2px;
+}
+
+.client-testimonial h2 {
+    font-weight: 100;
+}
+
+.client-testimonial h2 strong {
+    font-weight: 700;
+}
+
+.client-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testimonial-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.testimonial {
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    color: thistle;
+    background-color: #493548;
+}
+
+.testimonial::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #493548;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: 30px;
+    left: -15px;
+}
+
+.testimonial::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 17px solid #493548;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    top: 30px;
+    left: -17px;
+}
+
+.my-section-section h2 {
+    font-weight: 100;
+}
+
+.my-resume-section h2 strong {
+    font-weight: 700;
+}
+
+.service-section-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    padding: 2px;
+}
+
+.my-service-section-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    /* padding: 0px; */
+}
+
+.service-section-item {
+    background-color: #49354879;
+    color: thistle;
+    height: 420px;
+}
+
+/* .service-section-item2 {
+    background-color: #49354879;
+    color: thistle;
+    height: 400px;
+} */
+
+.service-section-item p {
+    text-align: justify;
+}
+
+.service-section-item a {
+    /* background-color: #14202E; */
+    /* text-decoration: none; */
+    /* color: yellow; */
+    padding: 5px;
+    text-decoration-line: none;
+
 }
 
 @media screen and (min-width: 1281px) {
@@ -221,6 +330,13 @@ header {
     .experience-div {
         margin: .5rem 0 0 0 !important;
     }
+
+    /* .my-service-section-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding: 5px;
+    } */
 }
 
 @media screen and (min-width: 1200px) and (max-width:1280) {
@@ -240,6 +356,7 @@ header {
 
     .about-me-div {
         padding-left: 3rem !important;
+        text-align: center;
     }
 
     .education-div {
@@ -248,6 +365,13 @@ header {
 
     .experience-div {
         margin: .5rem 0 0 0 !important;
+    }
+
+    .my-service-section-div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 50px; */
+        /* padding: 5px; */
     }
 }
 
@@ -289,6 +413,7 @@ header {
 
     .about-me-div {
         padding-left: 3rem !important;
+        text-align: center;
     }
 
     .education-div {
@@ -297,6 +422,13 @@ header {
 
     .experience-div {
         margin: .5rem 0 0 0 !important;
+    }
+
+    .my-service-section-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 50px; */
+        /* padding: 5px; */
     }
 }
 
@@ -421,6 +553,28 @@ header {
         text-align: justify;
     }
 
+    .button-one {
+        border-radius: 100px;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: .2rem;
+        color: white;
+        padding: 10px 15px;
+        /* margin-right: 10px;
+        margin-bottom: 10px; */
+    }
+
+    .button-two {
+        border-radius: 100px;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: .2rem;
+        /* color: white; */
+        padding: 10px 15px;
+        color: #fffdfd;
+        background-color: #493548;
+    }
+
     .experience-container {
         margin-top: 20px;
     }
@@ -431,6 +585,16 @@ header {
 
     .experience-div {
         margin: .5rem 0 0 0 !important;
+    }
+
+    .testimonial-div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .my-service-section-div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
